@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GoQuick</title>
+  <link rel="icon" type="image/png" href="img/ChatGPT Image Jun 4, 2025, 03_09_29 PM.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="content-container">
+    <div class="background-animation">
+      <div class="gradient-layer"></div>
+      <div class="gradient-layer gradient-layer--reverse"></div>
+      <div class="gradient-layer gradient-layer--slow"></div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Navbaar -->
+
+  <header class="delhivery-header">
+    <div class="delhivery-navbar">
+      <div class="delhivery-logo">
+        <img src="img/logo.png" alt="Delhivery Logo" />
+      </div>
+      <button class="track-order-button">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+          <path
+            d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z">
+          </path>
+          <circle cx="10.5" cy="19.5" r="1.5"></circle>
+          <circle cx="16.5" cy="19.5" r="1.5"></circle>
+        </svg>
+        <span class="cart-item-count" id="cartItemCount">0</span>
+      </button>
+      <button class="delhivery-menu-btn">☰</button>
+    </div>
+    <div class="delhivery-dropdown">
+      <a href="#About" class="delhivery-dropdown-link">About</a>
+      <a href="#Categories" class="delhivery-dropdown-link">Categories</a>
+      <a href="#OrderNow" class="delhivery-dropdown-link">Order Now</a>
+      <a href="#oursection" class="delhivery-dropdown-link">Our Section</a>
+      <a href="#Contect" class="delhivery-dropdown-link">Contact Us</a>
+    </div>
+  </header>
+
+  <!-- Category Section -->
+
+
+  <div class="navigation-menu" id="About">
+    <button class="navigation-menu__button navigation-menu__button--active">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+        <path
+          d="M10 3H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM9 9H5V5h4v4zm11-6h-6a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zm-1 6h-4V5h4v4zm-9 4H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1zm-1 6H5v-4h4v4zm8-6c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4zm0 6c-1.103 0-2-.897-2-2s.897-2 2-2 2 .897 2 2-.897 2-2 2z">
+        </path>
+      </svg>
+      <span>All Category</span>
+    </button>
+
+
+    <button class="navigation-menu__button" data-target="#Offer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+        <path
+          d="m20.749 12 1.104-1.908a1 1 0 0 0-.365-1.366l-1.91-1.104v-2.2a1 1 0 0 0-1-1h-2.199l-1.103-1.909a1.008 1.008 0 0 0-.607-.466.993.993 0 0 0-.759.1L12 3.251l-1.91-1.105a1 1 0 0 0-1.366.366L7.62 4.422H5.421a1 1 0 0 0-1 1v2.199l-1.91 1.104a.998.998 0 0 0-.365 1.367L3.25 12l-1.104 1.908a1.004 1.004 0 0 0 .364 1.367l1.91 1.104v2.199a1 1 0 0 0 1 1h2.2l1.104 1.91a1.01 1.01 0 0 0 .866.5c.174 0 .347-.046.501-.135l1.908-1.104 1.91 1.104a1.001 1.001 0 0 0 1.366-.365l1.103-1.91h2.199a1 1 0 0 0 1-1v-2.199l1.91-1.104a1 1 0 0 0 .365-1.367L20.749 12zM9.499 6.99a1.5 1.5 0 1 1-.001 3.001 1.5 1.5 0 0 1 .001-3.001zm.3 9.6-1.6-1.199 6-8 1.6 1.199-6 8zm4.7.4a1.5 1.5 0 1 1 .001-3.001 1.5 1.5 0 0 1-.001 3.001z">
+        </path>
+      </svg>
+      <span>Offer</span>
+    </button>
+
+
+    <button class="navigation-menu__button">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path
+          d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z">
+        </path>
+      </svg>
+      <span>WishList</span>
+    </button>
+
+  </div>
+
+
+  <!-- Hero Section -->
+
+  <section class="hero">
+    <div class="image-content">
+      <div class="slideshow-container">
+        <div class="slide fade">
+          <img src="img/istockphoto-1288407951-612x612.jpg" alt="Fresh Apples">
+        </div>
+        <div class="slide fade">
+          <img src="img/istockphoto-1973410812-612x612.jpg" alt="Juicy Oranges">
+        </div>
+        <div class="slide fade">
+          <img src="img/istockphoto-477557694-612x612.jpg" alt="Ripe Bananas">
+        </div>
+        <div class="slide fade">
+          <img src="img/istockphoto-615996762-612x612.jpg" alt="Sweet Grapes">
+        </div>
+      </div>
+    </div>
+    <div class="hero-section">
+      <div class="hero-content">
+        <h1>We Deliver to your <span>Doorstep</span></h1>
+        <p>Groceries delivered in 30 minutes</p>
+        <a href="#" class="cta-button">Shop Now</a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Cards -->
+
+
+  <div class="quality-cards-container">
+    <div class="quality-card">
+      <img class="quality-card-image" src="img/QA engineers-bro 2.png" alt="Quality Assurance">
+      <hr class="image-hover-indicator">
+      <h1 class="quality-card-title">Quality assurance</h1>
+      <p class="quality-card-description">Lorem ipsum dolor sit amet consectetur. Id eget condimentum elementum
+      </p>
+    </div>
+
+    <div class="quality-card">
+      <img class="quality-card-image" src="img/Wallet-rafiki 2.png" alt="Quality Assurance">
+      <hr class="image-hover-indicator">
+      <h1 class="quality-card-title">Quality assurance</h1>
+      <p class="quality-card-description">Lorem ipsum dolor sit amet consectetur. Id eget condimentum elementum
+      </p>
+    </div>
+
+    <div class="quality-card" id="Offer">
+      <img class="quality-card-image" src="img/Delivery-cuate 2.png" alt="Quality Assurance">
+      <hr class="image-hover-indicator">
+      <h1 class="quality-card-title">Quality assurance</h1>
+      <p class="quality-card-description" id="Categories">Lorem ipsum dolor sit amet consectetur. Id eget condimentum
+        elementum
+      </p>
+    </div>
+  </div>
+
+
+
+  <!-- Green Card -->
+  <div class="offer-main">
+    <div class="offer-card green-card">
+      <div class="discount-badge">60% OFF</div>
+      <h1 class="offer-title">Premium Quality Product</h1>
+      <p class="offer-description">
+        Get our best-selling product now at an incredible discount. Limited
+        time offer - don't miss out on this amazing deal!
+      </p>
+      <button class="shop-button">SHOP NOW</button>
+    </div>
+
+    <!-- Blue Card -->
+    <div class="offer-card blue-card">
+      <div class="discount-badge">40% OFF</div>
+      <h1 class="offer-title">Eco-Friendly Solution</h1>
+      <p class="offer-description">
+        Discover our sustainable alternative that's better for you and the
+        planet. Special introductory pricing for a limited time!
+      </p>
+      <button class="shop-button">SHOP NOW</button>
+    </div>
+  </div>
+
+
+  <!-- popular-categories -->
+
+
+  <section class="popular-categories">
+    <div class="categories-header">
+      <h1>Popular Categories</h1>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi veritatis fuga fugit sunt totam?</p>
+    </div>
+
+    <div class="categories-container">
+      <div class="big-card">
+        <img src="img/tangerine-newt-RgT22Ixcq4Y-unsplash.png" alt="Beverages">
+        <h3>Beverages</h3>
+        <p>35 items</p>
+      </div>
+
+      <div class="mini-cards-grid">
+        <div class="mini-card">
+          <img src="img/Group 8 (1).png" alt="Fruits">
+          <h3>Fruits</h3>
+          <p>2 items</p>
+        </div>
+        <div class="mini-card">
+          <img src="img/Group 8 (2).png" alt="Meat">
+          <h3>Meat</h3>
+          <p>15 items</p>
+        </div>
+        <div class="mini-card">
+          <img src="img/Group 8 (3).png" alt="Cooking">
+          <h3>Cooking</h3>
+          <p>25 items</p>
+        </div>
+        <div class="mini-card">
+          <img src="img/Group 8 (4).png" alt="Home">
+          <h3>Home</h3>
+          <p>8 items</p>
+        </div>
+        <div class="mini-card">
+          <img src="img/Group 8.png" alt="Pest">
+          <h3>Pest</h3>
+          <p>4 items</p>
+        </div>
+        <div class="mini-card" id="OrderNow">
+          <img src="img/Group 9.png" alt="Office">
+          <h3>Office</h3>
+          <p>6 items</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="product-slider-section">
+    <div class="product-slider">
+      <button class="slider-navigation-button slider-navigation-button--prev" onclick="moveSlider(-1)">❮</button>
+      <div class="product-slider__container" id="productSliderContainer">
+        <div class="product-card" data-id="1" data-name="Fresh Fruits" data-price="4.99"
+          data-image="img/Group 8 (1).png">
+          <img src="img/Group 8 (1).png" alt="Fruits" class="product-card__image">
+          <div class="product-card__content">
+            <h3 class="product-card__title">Fresh Fruits</h3>
+            <p class="product-card__description">2 items available</p>
+            <p class="product-card__price">$4.99</p>
+          </div>
+          <button class="add-to-cart-button">
+            <span>Add to Cart</span>
+          </button>
+        </div>
+        <div class="product-card" data-id="2" data-name="Quality Meat" data-price="12.99"
+          data-image="img/Group 8 (2).png">
+          <img src="img/Group 8 (2).png" alt="Meat" class="product-card__image">
+          <div class="product-card__content">
+            <h3 class="product-card__title">Quality Meat</h3>
+            <p class="product-card__description">15 items available</p>
+            <p class="product-card__price">$12.99</p>
+          </div>
+          <button class="add-to-cart-button">
+            <span>Add to Cart</span>
+          </button>
+        </div>
+        <div class="product-card" data-id="3" data-name="Cooking Essentials" data-price="8.49"
+          data-image="img/Group 8 (3).png">
+          <img src="img/Group 8 (3).png" alt="Cooking" class="product-card__image">
+          <div class="product-card__content">
+            <h3 class="product-card__title">Cooking Essentials</h3>
+            <p class="product-card__description">25 items available</p>
+            <p class="product-card__price">$8.49</p>
+          </div>
+          <button class="add-to-cart-button">
+            <span>Add to Cart</span>
+          </button>
+        </div>
+        <div class="product-card" data-id="4" data-name="Home Products" data-price="15.99"
+          data-image="img/Group 8 (4).png">
+          <img src="img/Group 8 (4).png" alt="Home" class="product-card__image">
+          <div class="product-card__content">
+            <h3 class="product-card__title">Home Products</h3>
+            <p class="product-card__description">8 items available</p>
+            <p class="product-card__price">$15.99</p>
+          </div>
+          <button class="add-to-cart-button">
+            <span>Add to Cart</span>
+          </button>
+        </div>
+        <div class="product-card" data-id="5" data-name="Pest Control" data-price="24.99" data-image="img/Group 8.png">
+          <img src="img/Group 8.png" alt="Pest" class="product-card__image">
+          <div class="product-card__content">
+            <h3 class="product-card__title">Pest Control</h3>
+            <p class="product-card__description">4 items available</p>
+            <p class="product-card__price">$24.99</p>
+          </div>
+          <button class="add-to-cart-button">
+            <span>Add to Cart</span>
+          </button>
+        </div>
+        <div class="product-card" data-id="6" data-name="Office Supplies" data-price="7.99"
+          data-image="img/Group 9.png">
+          <img src="img/Group 9.png" alt="Office" class="product-card__image">
+          <div class="product-card__content">
+            <h3 class="product-card__title">Office Supplies</h3>
+            <p class="product-card__description">6 items available</p>
+            <p class="product-card__price">$7.99</p>
+          </div>
+          <button class="add-to-cart-button">
+            <span>Add to Cart</span>
+          </button>
+        </div>
+      </div>
+      <button class="slider-navigation-button slider-navigation-button--next" onclick="moveSlider(1)">❯</button>
+    </div>
+  </section>
+
+
+  <!-- Buy Section -->
+
+
+
+  <div class="shopping-cart-overlay">
+    <div class="shopping-cart-container">
+      <div class="shopping-cart-header">
+        <h2 class="shopping-cart-header__title">Your Order</h2>
+        <button class="close-cart-button" id="closeCartButton">×</button>
+      </div>
+      <div class="shopping-cart-items" id="shoppingCartItems">
+        <div class="empty-cart-message">Your cart is empty</div>
+      </div>
+      <div class="shopping-cart-summary" id="shoppingCartSummary" style="display: none;">
+        <div class="summary-row">
+          <span>Subtotal:</span>
+          <span id="cartSubtotal">$0.00</span>
+        </div>
+        <div class="summary-row">
+          <span>Discount (10%):</span>
+          <span class="discount-amount" id="cartDiscount">-$0.00</span>
+        </div>
+        <div class="summary-row total-amount">
+          <span>Total:</span>
+          <span id="cartTotal">$0.00</span>
+        </div>
+        <button class="checkout-button">Proceed to Checkout</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Popular Brand  -->
+
+  <div id="oursection" class="img-container">
+    <h1>Popular Brands</h1>
+    <div class="brands-grid">
+      <img class="brand-logo" src="img/logo.png" alt="Brand logo">
+      <img class="brand-logo" src="img/logo (1).png" alt="Brand logo">
+      <img class="brand-logo" src="img/logo (2).png" alt="Brand logo">
+      <img class="brand-logo" src="img/logo (3).png" alt="Brand logo">
+      <img class="brand-logo" src="img/logo (4).png" alt="Brand logo">
+      <img class="brand-logo" src="img/logo (5).png" alt="Brand logo">
+      <img class="brand-logo" src="img/logo (7).png" alt="Brand logo">
+      <img class="brand-logo" src="img/logo (8).png" alt="Brand logo">
+    </div>
+  </div>
+
+
+  <!-- Review-Slider -->
+
+  <div class="main-review">
+    <div class="review">
+      <h1>What people say about us</h1>
+    </div>
+
+    <div class="slider-container">
+      <!-- Slide 1 -->
+      <div class="review-slider active">
+        <p>This product changed my life! The quality is outstanding and the service was exceptional. I would definitely
+          recommend to all my friends.</p>
+        <div class="reviewer-info">
+          <img src="img/Button → testimonials-1-1.a46129816eea4b42aa181a7c7367bab9.png.png" alt="Sarah Johnson">
+          <div class="reviewer-details">
+            <h1>Sarah Johnson</h1>
+            <p>Marketing Director</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="review-slider">
+        <p>I've been using this service for years and it never disappoints. The team is professional and responsive to
+          all my needs.</p>
+        <div class="reviewer-info">
+          <img
+            src="img/pleased-young-pretty-caucasian-girl-with-beret-hat-optical-glasses-puts-hands-chest_141793-103566wwwwwwwwww.jpg"
+            alt="Sarah Johnson">
+          <div class="reviewer-details">
+            <h1>Michael Chen</h1>
+            <p>Software Engineer</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="review-slider">
+        <p>Absolutely worth every penny! The attention to detail is remarkable. I'm completely satisfied with my
+          purchase and will be a returning customer.</p>
+        <div class="reviewer-info">
+          <img src="img/istockphoto-2058297502-612x612.jpg" alt="Sarah Johnson">
+          <div class="reviewer-details">
+            <h1>Emily Rodriguez</h1>
+            <p>Graphic Designer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider-nav">
+      <div class="slider-dot active" onclick="showSlide(0)"></div>
+      <div class="slider-dot" onclick="showSlide(1)"></div>
+      <div class="slider-dot" onclick="showSlide(2)"></div>
+    </div>
+  </div>
+
+
+
+
+  <!-- App Download -->
+
+
+  <div class="wrapper">
+    <div class="phone-preview">
+      <img src="img/phone.png" alt="App Screen">
+    </div>
+    <div class="description">
+      <h2>Download Our App for iOS & Android</h2>
+      <p>Experience seamless connectivity with our mobile apps. Available now on the App Store and Google Play Store for
+        all your needs.</p>
+
+
+      <div class="store">
+        <img src="img/Google Play.png" alt="">
+        <img src="img/App Store.png" alt="">
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Common Questions -->
+
+
+  <div class="faq-container">
+
+
+    <div class="faq-item">
+      <div class="faq-question">Q . How do I create an account?</div>
+      <div class="faq-answer">
+        To create an account, click on the "Sign Up" button and fill in your details including email and password.
+        You'll receive a confirmation email to verify your account.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Q . What payment methods do you accept?</div>
+      <div class="faq-answer">
+        We accept all major credit cards (Visa, MasterCard, American Express), PayPal, and bank transfers. All
+        transactions are securely processed.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Q . How can I reset my password?</div>
+      <div class="faq-answer">
+        Click on "Forgot Password" on the login page and enter your email address. You'll receive a link to reset your
+        password. The link expires in 24 hours for security reasons.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Q . Is there a mobile app available?</div>
+      <div class="faq-answer">
+        Yes! Our mobile app is available for both iOS and Android devices. You can download it from the App Store or
+        Google Play Store.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Q . What is your refund policy?</div>
+      <div class="faq-answer">
+        We offer a 30-day money-back guarantee on all our plans. If you're not satisfied, contact our support team
+        within 30 days of purchase for a full refund.
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Footer -->
+
+
+  <footer id="Contect" class="footer">
+    <div class="footer-section">
+      <img src="img/logo.png" alt="">
+    </div>
+    </div>
+
+    <div class="footer-section">
+      <h3 class="footer-title">Follow us on social media:</h3>
+      <div class="social-icons">
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path
+              d="M12.001 2.002c-5.522 0-9.999 4.477-9.999 9.999 0 4.99 3.656 9.126 8.437 9.879v-6.988h-2.54v-2.891h2.54V9.798c0-2.508 1.493-3.891 3.776-3.891 1.094 0 2.24.195 2.24.195v2.459h-1.264c-1.24 0-1.628.772-1.628 1.563v1.875h2.771l-.443 2.891h-2.328v6.988C18.344 21.129 22 16.992 22 12.001c0-5.522-4.477-9.999-9.999-9.999z" />
+          </svg>
+        </a>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path
+              d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z" />
+          </svg>
+        </a>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path
+              d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z" />
+          </svg>
+        </a>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path
+              d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z" />
+          </svg>
+        </a>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path
+              d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z" />
+            <circle cx="11.994" cy="11.979" r="3.003" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <div class="link-column">
+        <h3 class="footer-title">Customer</h3>
+        <a href="#" class="footer-link">My account</a>
+        <a href="#" class="footer-link">My orders</a>
+        <a href="#" class="footer-link">Return orders</a>
+        <a href="#" class="footer-link">Waitlist</a>
+      </div>
+
+      <div class="link-column">
+        <h3 class="footer-title">Information</h3>
+        <a href="#" class="footer-link">About us</a>
+        <a href="#" class="footer-link">Contact us</a>
+        <a href="#" class="footer-link">FAQ</a>
+        <a href="#" class="footer-link">Terms of Use</a>
+      </div>
+    </div>
+
+    <div class="delivery-info">
+      <p><img src="img/ChatGPT Image Apr 7, 2025, 03_24_51 PM.png" alt=""> Delivery from 2-4 hours</p>
+      <p><img src="img/ChatGPT Image Apr 7, 2025, 03_27_20 PM.png" alt=""> Quality assurance</p>
+    </div>
+
+
+
+    <div class="chatbot-button">
+      <button id="chatbotToggle" href="https://web.whatsapp.com/  "> <a href="https://web.whatsapp.com/  "
+          class="whatsapp-btn" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12c0 4.41 2.72 8.19 6.5 9.74V22l3.25-1.75c.75.13 1.52.25 2.25.25 5.52 0 10-4.48 10-10S17.52 2 12 2zm-1 14H9v-2h2v2zm0-4H9V7h2v5zm4 4h-2v-2h2v2zm0-4h-2V7h2v5z">
+            </path>
+          </svg>
+        </a></button>
+    </div>
+
+    <div class="copyright">
+      Copyright © 2025 Sneh Gohil. All Rights Reserved
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const slides = document.querySelectorAll('.review-slider');
+      let currentIndex = 0;
+
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.classList.remove('active', 'previous');
+          if (i === index) {
+            slide.classList.add('active');
+          } else if (i === (index - 1 + slides.length) % slides.length) {
+            slide.classList.add('previous');
+          }
+        });
+      }
+
+      function nextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+      }
+
+      setInterval(nextSlide, 3000); // Change slide every 3 seconds
+      showSlide(currentIndex);
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const menuLinks = document.querySelectorAll('.delhivery-dropdown-link');
+
+      menuLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
+          const targetId = this.getAttribute('href');
+          if (targetId.startsWith('#')) {
+            e.preventDefault();
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+              const targetPosition = targetElement.offsetTop;
+              const startPosition = window.pageYOffset;
+              const distance = targetPosition - startPosition;
+              const duration = 500; // 5 seconds
+              let startTime = null;
+
+              function animation(currentTime) {
+                if (startTime === null) startTime = currentTime;
+                const timeElapsed = currentTime - startTime;
+                const run = ease(timeElapsed, startPosition, distance, duration);
+                window.scrollTo(0, run);
+                if (timeElapsed < duration) requestAnimationFrame(animation);
+              }
+
+              function ease(t, b, c, d) {
+                t /= d / 2;
+                if (t < 1) return (c / 2) * t * t + b;
+                t--;
+                return (-c / 2) * (t * (t - 2) - 1) + b;
+              }
+
+              requestAnimationFrame(animation);
+            }
+          }
+        });
+      });
+    });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Review Slider Functionality
+      const slides = document.querySelectorAll('.review-slider');
+      const dots = document.querySelectorAll('.slider-dot');
+      let currentSlide = 0;
+
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.classList.remove('active');
+          dots[i].classList.remove('active');
+        });
+        slides[index].classList.add('active');
+        dots[index].classList.add('active');
+      }
+
+      function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+      }
+
+      dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+          currentSlide = index;
+          showSlide(currentSlide);
+        });
+      });
+
+      setInterval(nextSlide, 5000); // Auto-slide every 5 seconds
+
+      // Product Slider Functionality
+      const sliderContainer = document.getElementById('productSliderContainer');
+      const productCards = Array.from(document.querySelectorAll('.product-card'));
+      const prevButton = document.querySelector('.slider-navigation-button--prev');
+      const nextButton = document.querySelector('.slider-navigation-button--next');
+
+      let currentIndex = 0;
+      const cardWidth = productCards[0].offsetWidth + 20;
+      const visibleCards = Math.floor(sliderContainer.offsetWidth / cardWidth);
+
+      // Clone the first and last cards for seamless looping
+      const firstCard = productCards[0].cloneNode(true);
+      const lastCard = productCards[productCards.length - 1].cloneNode(true);
+      sliderContainer.insertBefore(lastCard, productCards[0]);
+      sliderContainer.appendChild(firstCard);
+
+      // Update the cards collection after cloning
+      const allCards = Array.from(document.querySelectorAll('.product-card'));
+
+      function moveSlider(direction) {
+        currentIndex += direction;
+
+        // Apply the transition
+        sliderContainer.style.transition = 'transform 0.5s ease-in-out';
+        sliderContainer.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+
+        // Check if we need to jump to the other end (for infinite effect)
+        sliderContainer.addEventListener('transitionend', function handleTransitionEnd() {
+          if (currentIndex <= -1) {
+            sliderContainer.style.transition = 'none';
+            currentIndex = allCards.length - 3;
+            sliderContainer.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+          } else if (currentIndex >= allCards.length - visibleCards) {
+            sliderContainer.style.transition = 'none';
+            currentIndex = 0;
+            sliderContainer.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+          }
+          sliderContainer.removeEventListener('transitionend', handleTransitionEnd);
+        });
+      }
+
+      prevButton.addEventListener('click', () => moveSlider(-1));
+      nextButton.addEventListener('click', () => moveSlider(1));
+
+      // Initialize position (start at the "real" first card, not the cloned one)
+      sliderContainer.style.transform = `translateX(-${cardWidth}px)`;
+      currentIndex = 1;
+
+      // FAQ Toggle Functionality
+      document.querySelectorAll('.faq-question').forEach(question => {
+        question.addEventListener('click', () => {
+          const item = question.parentNode;
+          item.classList.toggle('active');
+          document.querySelectorAll('.faq-item').forEach(otherItem => {
+            if (otherItem !== item && otherItem.classList.contains('active')) {
+              otherItem.classList.remove('active');
+            }
+          });
+        });
+      });
+
+      // Shopping Cart Functionality
+      let shoppingCart = [];
+      const shoppingCartOverlay = document.querySelector('.shopping-cart-overlay');
+      const shoppingCartItemsContainer = document.getElementById('shoppingCartItems');
+      const shoppingCartSummary = document.getElementById('shoppingCartSummary');
+      const cartSubtotalElement = document.getElementById('cartSubtotal');
+      const cartDiscountElement = document.getElementById('cartDiscount');
+      const cartTotalElement = document.getElementById('cartTotal');
+      const closeCartButton = document.getElementById('closeCartButton');
+      const trackOrderButton = document.querySelector('.track-order-button');
+      const cartItemCountElement = document.getElementById('cartItemCount');
+
+      trackOrderButton.addEventListener('click', () => {
+        shoppingCartOverlay.style.display = 'flex';
+        updateShoppingCartUI();
+      });
+
+      closeCartButton.addEventListener('click', () => {
+        shoppingCartOverlay.style.display = 'none';
+      });
+
+      document.querySelectorAll('.add-to-cart-button').forEach(button => {
+        button.addEventListener('click', function () {
+          const productCard = this.closest('.product-card');
+          const productId = productCard.getAttribute('data-id');
+          const productName = productCard.getAttribute('data-name');
+          const productPrice = parseFloat(productCard.getAttribute('data-price'));
+          const productImage = productCard.getAttribute('data-image');
+
+          addToShoppingCart(productId, productName, productPrice, productImage);
+        });
+      });
+
+      function addToShoppingCart(id, name, price, image) {
+        const existingItem = shoppingCart.find(item => item.id === id);
+
+        if (existingItem) {
+          existingItem.quantity += 1;
+        } else {
+          shoppingCart.push({
+            id,
+            name,
+            price,
+            image,
+            quantity: 1
+          });
+        }
+
+        updateCartItemCount();
+        updateShoppingCartUI();
+      }
+
+      function updateCartItemCount() {
+        const count = shoppingCart.reduce((total, item) => total + item.quantity, 0);
+        cartItemCountElement.textContent = count;
+      }
+
+      function updateShoppingCartUI() {
+        if (shoppingCart.length === 0) {
+          shoppingCartItemsContainer.innerHTML = '<div class="empty-cart-message">Your cart is empty</div>';
+          shoppingCartSummary.style.display = 'none';
+          return;
+        }
+
+        shoppingCartSummary.style.display = 'block';
+        shoppingCartItemsContainer.innerHTML = '';
+
+        let subtotal = 0;
+
+        shoppingCart.forEach(item => {
+          const cartItemElement = document.createElement('div');
+          cartItemElement.className = 'shopping-cart-item';
+          cartItemElement.innerHTML = `
+          <img src="${item.image}" alt="${item.name}" class="shopping-cart-item__image">
+          <div class="shopping-cart-item__details">
+            <div class="shopping-cart-item__name">${item.name}</div>
+            <div class="shopping-cart-item__price">$${item.price.toFixed(2)}</div>
+          </div>
+          <div class="shopping-cart-item__quantity-controls">
+            <button class="quantity-adjust-button minus" data-id="${item.id}">-</button>
+            <span class="shopping-cart-item__quantity">${item.quantity}</span>
+            <button class="quantity-adjust-button plus" data-id="${item.id}">+</button>
+          </div>
+          <button class="remove-item-button" data-id="${item.id}">×</button>
+        `;
+
+          shoppingCartItemsContainer.appendChild(cartItemElement);
+          subtotal += item.price * item.quantity;
+        });
+
+        const discount = subtotal * 0.1;
+        const total = subtotal - discount;
+
+        cartSubtotalElement.textContent = `$${subtotal.toFixed(2)}`;
+        cartDiscountElement.textContent = `-$${discount.toFixed(2)}`;
+        cartTotalElement.textContent = `$${total.toFixed(2)}`;
+
+        document.querySelectorAll('.quantity-adjust-button.minus').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const id = btn.getAttribute('data-id');
+            updateCartItemQuantity(id, -1);
+          });
+        });
+
+        document.querySelectorAll('.quantity-adjust-button.plus').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const id = btn.getAttribute('data-id');
+            updateCartItemQuantity(id, 1);
+          });
+        });
+
+        document.querySelectorAll('.remove-item-button').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const id = btn.getAttribute('data-id');
+            removeCartItem(id);
+          });
+        });
+      }
+
+      function updateCartItemQuantity(id, change) {
+        const item = shoppingCart.find(item => item.id === id);
+
+        if (item) {
+          item.quantity += change;
+
+          if (item.quantity <= 0) {
+            shoppingCart = shoppingCart.filter(item => item.id !== id);
+          }
+
+          updateCartItemCount();
+          updateShoppingCartUI();
+        }
+      }
+
+      function removeCartItem(id) {
+        shoppingCart = shoppingCart.filter(item => item.id !== id);
+        updateCartItemCount();
+        updateShoppingCartUI();
+      }
+
+      // Dropdown Menu Functionality
+      const menuBtn = document.querySelector('.delhivery-menu-btn');
+      const dropdown = document.querySelector('.delhivery-dropdown');
+      const dropdownLinks = document.querySelectorAll('.delhivery-dropdown-link');
+
+      menuBtn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        dropdown.classList.toggle('delhivery-dropdown-active');
+      });
+
+      document.addEventListener('click', function () {
+        dropdown.classList.remove('delhivery-dropdown-active');
+      });
+
+      dropdownLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
+          dropdown.classList.remove('delhivery-dropdown-active');
+
+          const href = link.getAttribute('href');
+          if (href.startsWith('#')) {
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (target) {
+              target.scrollIntoView({ behavior: 'smooth' });
+            }
+          }
+        });
+      });
+
+      // Slideshow Functionality
+      let slideIndex = 0;
+
+      function showSlides() {
+        const slides = document.querySelectorAll('.slide');
+        slides.forEach(slide => (slide.style.display = 'none'));
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = 'block';
+        setTimeout(showSlides, 3000); // Change image every 3 seconds
+      }
+
+      showSlides();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
